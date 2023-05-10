@@ -1,0 +1,12 @@
+services:
+  socnet:
+    build: .
+    ports:
+      - 8000:8000
+    restart: on-failure
+
+  socnet1:
+    build: .
+    ports:
+      - 8050:8000
+    restart: on-failure
